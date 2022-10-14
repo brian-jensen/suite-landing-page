@@ -22,4 +22,4 @@
 
 ## Author
 
-- Frontend Mentor - [@brian-jensen](https://www.frontendmentor.io/profile/brian-jensen)
+- Frontend Mentor - [@brian-jensen](https://www.frontendmentor.io/profile/brian-jensen)# suite-landing-page
