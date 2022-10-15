@@ -142,6 +142,8 @@ header a {
 }
 
 .hero .background img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
   border-radius: 15px;
 }
@@ -190,7 +192,7 @@ header a {
   display: flex;
   height: 402px;
   width: 252px;
-  transform: translate(0, -45%);
+  transform: translate(16px, -45%);
   filter: contrast(75%);
   margin: 0 auto -140px;
 }
@@ -277,6 +279,7 @@ footer p {
 }
 
 @media (hover: hover) {
+
   header a:hover {
     color: var(--color-white);
     background-color: var(--color-black);
@@ -290,5 +293,107 @@ footer p {
   .social a:hover svg {
     opacity: 0.5;
     transition: opacity 0.3s ease;
+  }
+}
+
+@media (min-width: 768px) {
+
+  header {
+    padding: 40px 40px 0;
+    margin-bottom: 80px;
+  }
+
+  header a {
+    height: 56px;
+    width: 219px;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.16px;
+  }
+
+  .hero {
+    height: 482px;
+    background: url(../assets/image-hero-portrait@2x.webp) no-repeat top 0 right 40px/281px 482px;
+    padding: 50px 40px 0;
+    margin-bottom: 88px;
+  }
+
+  .hero .background img.landscape {
+    display: none;
+  }
+
+  .hero-heading svg {
+    height: 32px;
+    width: 231px;
+    transform: translate(220px, -10px);
+  }
+
+  .hero-heading svg path {
+    stroke-width: 2.5px;
+  }
+
+  .hero-heading h1 {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.77px;
+    padding-right: 156px;
+  }
+
+  .hero p {
+    width: 350px;
+    margin-bottom: 40px;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .stats h2 {
+    margin-bottom: 0;
+  }
+
+  .bg-color {
+    background: linear-gradient(transparent 32%, var(--color-cream) 18%, var(--color-cream) 50%);
+    padding: 0 40px;
+  }
+
+  .review {
+    margin-top: 280px;
+    padding: 0 40px 64px;
+  }
+
+  .jeremy::after {
+    display: flex;
+    position: relative;
+    top: -235px;
+    left: 15px;
+    margin: 0 auto -150px;
+    z-index: -1;
+    content: "";
+    background: #DB65E2;
+    mix-blend-mode: normal;
+    opacity: 0.48;
+    filter: blur(67.957px);
+    height: 150px;
+    width: 200px;
+    overflow: hidden;
+  }
+
+  .review-text p.quote {
+    margin: 0 auto 40px;
+    width: 573px;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 92px 40px 72px;
   }
 }
